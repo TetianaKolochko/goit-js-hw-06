@@ -11,6 +11,10 @@ function onFormSubmit(event) {
 if (email.value === "" || password.value === "") {
     alert ("Please fill in all the fields!");
 }
-console.log(`Email: ${email.value}, Password: ${password.value}`);
+    let userData = {
+        email: email.value,
+        password: password.value,
+    };
+console.log(userData);
     event.currentTarget.reset();
 }
